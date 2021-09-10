@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3 {
+  color: rgb(54, 54, 54);
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+h3,
+h4 {
+  font-weight: 400;
+  color: rgb(100, 100, 100);
+}
+
+.App {
+  min-height: 100vh;
+  transition: all 0.5s ease;
+}
+
+.library-active {
+  margin-left: 20%;
+}
+
+.dark-mode {
+  background: rgb(65, 65, 65);
+  color: white;
+  button {
+    background: white;
+    border: none;
+    cursor: pointer;
+    border: 2px solid rgb(100, 100, 100);
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    &:hover {
+      background: white;
+      color: rgb(65, 65, 65);
+    }
+  }
+  h1,
+  h2,
+  h3 {
+    color: white;
+  }
+  h4 {
+    font-weight: 400;
+    color: rgb(224, 224, 224);
+  }
+  .song-container img {
+    border: 2px solid white;
+  }
+  .library {
+    background-color: rgb(65, 65, 65);
+    box-shadow: 2px 2px 50px rgb(95, 95, 95);
+  }
+  .selected {
+    background-color: rgb(167, 167, 167);
+  }
+}
+
+@import "./song";
+@import "./player";
+@import "./library";
+@import "./nav";

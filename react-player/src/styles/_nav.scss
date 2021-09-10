@@ -1,0 +1,46 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.5s ease;
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border: 2px solid rgb(65, 65, 65);
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    &:hover {
+      background: rgb(65, 65, 65);
+      color: white;
+    }
+  }
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  button {
+    margin: 1rem;
+    display: flex;
+    .icon {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    .controls {
+      button {
+        width: fit-content;
+        z-index: 10;
+        padding: 0.3rem;
+        .icon {
+          margin-left: 0.3rem;
+        }
+      }
+    }
+  }
+}
